@@ -2,7 +2,7 @@ async function getWeather() {
   const city = document.getElementById("city").value;
 
   try {
-    const response = await fetch(`http://localhost:3000/weather?city=${encodeURIComponent(city)}`);
+    const response = await fetch(`https://weatherly-backend-7ecy.onrender.com/weather?city=${encodeURIComponent(city)}`);
     const result = await response.json();
 
     if (!result || !result.data || !result.data.current_condition) {
