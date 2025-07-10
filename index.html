@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>weather app </title>
+  
+    <!--custom styles-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1> <i class="fa-solid fa-cloud"></i> Weatherly</h1>
+      <div class="searchBar">
+    
+    
+        <input  type="text" id="city" placeholder="Enter city name">
+      
+        <button id="bar" onclick="getWeather()"> <i class="fa-solid fa-magnifying-glass"></i>  </button>
+      </div>
+    </header>
+  
+ 
+   <main class="output">
+   </main>
+   
+   <footer>
+   <p id="fin"> &COPY; 2025 Joseph Bonsu 🇬🇭<br><a href="https://oligotech.vercel.app"><i class="fa-solid fa-user-tie"></i></a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
