@@ -2,7 +2,7 @@ async function getWeather() {
   const city = document.getElementById("city").value;
 
   try {
-    const response = await fetch(`'https://world-weather-online-api1.p.rapidapi.com/weather.ashx?q=40.73%2C-73&num_of_days=3&tp=1&lang=en&aqi=yes&alerts=no&format=json`);
+    const response = await fetch(`https://weatherly-backend-7ecy.onrender.com/weather?city=${encodeURIComponent(city)}`);
     const result = await response.json();
 
     if (!result || !result.data || !result.data.current_condition) {
