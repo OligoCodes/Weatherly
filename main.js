@@ -2,7 +2,7 @@ async function getWeather() {
   const city = document.getElementById("city").value;
 
   try {
-    const response = await fetch(`https://weatherly-backend-q71k.onrender.com/weather?city=${encodeURIComponent(city)}`);
+    const response = await fetch(`https://weatherly-backend-3nts.onrender.com/weather?city=${encodeURIComponent(city)}`);
     const obj = await response.json();
 
     if (obj.weatherData && obj.weatherData.data && obj.weatherData.data.current_condition) {
