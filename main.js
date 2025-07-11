@@ -58,12 +58,14 @@ async function getWeather() {
           <h1 id="degrees">${condition.FeelsLikeC}°C</h1>~${condition.FeelsLikeF}°F
         </div>
       `;
+      
+      box.appendChild(resultDiv)
 
       resultDiv.querySelector(".deleteBtn").addEventListener("click", () => {
         resultDiv.remove();
       });
 
-      box.appendChild(resultDiv);
+      ;
     } else {
       document.getElementById("output").innerHTML = `<h1 style="color:white">City not found.</h1>`;
     }
